@@ -1,0 +1,48 @@
+﻿Fizz buzz is a group word game for children to teach them about division.
+
+Players take turns to count incrementally, replacing any number divisible by three with the word "fizz", and any number divisible by five
+with the word "buzz".
+
+[Wikipedia] The idea behind this exercise is to solve the simple problem of writing the numbers from 1 to N according to the following
+three rules:
+-Number is divisible by 3 –> write Fizz
+-Number is divisible by 5 –> write Buzz
+-Number is divisible by 3 and 5 –> write FizzBuzz
+-Otherwise write number
+
+So write a program that prints the numbers from 1 to 100. 
+
+- For multiples of 3 print "Fizz" instead of the number,
+- and for the multiples of 5 print "Buzz". 
+- For numbers which are multiples of both 3 and 5 print "FizzBuzz"
+- otherwise return input int as string
+- Rules are in order
+
+NB
+TDD - AAA - Red-Green-Refactor
+
+Simple Design,
+- pass all tests
+- clear, expressive, consistent
+- no duplication
+- minimal
+
+Ways to get Green in TDD
+-Fake it
+-Obvious implementation
+-Triangulation
+
+
+Steps:
+-Add a class library project/folder named FizzBuzz
+-Add a class library project/folder named FizzBuzz Tests
+-Add a reference to Nuget NUnit, 3.0.0, runner etc
+-Write first test to fail, so as we need to input a number, between 1 to 100, so we can fail on anything < 0
+-This is a warm up to writing the code, and beginning the test run cycle
+-Make the test fail by initially returning "FIZZ" in the string
+-Next make the test pass by returning empty string to satisfy the input rule, adding the neccessary code to check the input
+-Test Max and Min inputs - RGR
+-Test Can Test SingleNumbers -RGR
+
+
+
